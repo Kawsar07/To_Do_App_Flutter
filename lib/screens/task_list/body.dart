@@ -5,16 +5,31 @@ import 'package:flutter/material.dart';
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
-      itemCount: 4,
-      separatorBuilder: (context, index) => Divider(
-        color: Colors.blueGrey,
-      ),
-      itemBuilder: (context, index) => ListTile(
-          title: Text('Task title',
-              style: TextStyle(decoration: TextDecoration.lineThrough)),
-          onTap: () {},
-          onLongPress: () {}),
+    return Column(
+children: [
+  ListTile(
+    title: Text('Delerivable #1 project proposal and design'),
+  ),
+  Divider(height: 5,thickness: 3,),
+  ListTile(
+    title: Text('prototype 1'),
+  ),
+  Divider(height: 5,thickness: 3,),
+  ListTile(
+    title: Text('Delerivable #3 prototype 2'),
+  ),
+  Divider(height: 5,thickness: 3,),
+  ListTile(
+    title: Text('Delerivable #4 Backend'),
+  ),
+  Divider(height: 5,thickness: 3,),
+  ListTile(
+    title: Text('Delerivable #5 Relase Version'),
+  ),
+  Divider(height: 5,thickness: 3,)
+],
+
     );
+
   }
 }
